@@ -8,6 +8,8 @@
 </head>
 <label for="num1">Liczba 1: <input type="number" id="num1"></label>
 <label for="num2">Liczba 2: <input type="number" id="num2"></label>
+<button>SUMA</button>
+<p></p>
 <script>
 const num1=document.querySelector('#num1')
 const num2=document.querySelector('#num2')
@@ -19,7 +21,7 @@ btn.addEventListener('click', function(){
 
 const suma1=parseInt(num1.value)+parseInt(num2.value);
 
-p.innerHTML = `Suma wynosi: <b>$ {suma1} </b>`
+p.innerHTML = `Suma wynosi: <b> ${suma1} </b>`
 })
 
 
