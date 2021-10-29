@@ -6,13 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zadanie Jakub Majewski 3B</title>
 </head>
-
+<label for="num1">Liczba 1: <input type="number" id="num1"></label>
+<label for="num2">Liczba 2: <input type="number" id="num2"></label>
 <script>
-function suma(){
-var a,b,c
-a=Number
-b=Number
-c=a+b
+const num1=document.querySelector('#num1')
+const num2=document.querySelector('#num2')
+const btn=document.querySelector('button')
+const p=document.querySelector('p')
+
+
+btn.addEventListener('click', function(){
+
+const suma1=parseInt(num1.value)+parseInt(num2.value);
+
+p.innerHTML = `Suma wynosi: <b>$ {suma1} </b>`
+})
+//function suma(){
+//var a,b,c;
+//a=Number(document.getElementById("plus1").value);
+//b=Number(document.getElementById("plus2").value);
+//c=a+b
 
 }
 
